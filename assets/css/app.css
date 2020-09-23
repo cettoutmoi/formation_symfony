@@ -1,7 +1,9 @@
-header {
-    background-color:cadetblue;
-}
-
 body {
-    background-color:brown;
+    background-color: lightgray;
+}
+article.card {
+    min-height: 300px;
+}
+.navbar-text {
+    width: 100%;
 }

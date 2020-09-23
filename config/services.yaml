@@ -8,7 +8,6 @@ parameters:
     database_path: "%kernel.project_dir%/var/cakes.sqlite"
     pdo_dsn: "sqlite:%database_path%"
 
-
 services:
     # default configuration for services in *this* file
     _defaults:
