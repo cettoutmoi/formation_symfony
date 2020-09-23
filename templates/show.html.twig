@@ -1,16 +1,12 @@
 {% extends 'layout.html.twig' %}
-
 {% block titre %}
-liste
+show
 {% endblock %}
-
 {% block content %}
-                <h3>Cakes list</h3>
+                <h3>Cakes show</h3>
                 <div class="row">
-                    {% for cake in cakes %}
-                    <div class="col-sm-3">
-<a href="{{ path('app_cake_show', {'cakeId': cake.id}) }}">
-
+                <div class="col-sm-3">
+<a href="cake.php?id={{ cake.id }}">
     <article class="card">
     <img class="card-img-top" src="{{ cake.image }}" alt="{{ cake.name }}" style="height:300px">
         <div class="card-body">
@@ -18,7 +14,6 @@ liste
         </div>
     </article>
 </a>
-                    </div>
-                    {% endfor %}
+                </div>
                 </div>
 {% endblock %}
