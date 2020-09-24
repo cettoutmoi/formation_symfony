@@ -14,3 +14,9 @@ app_cake_show:
 app_cake_create:
     path: /cakes/create
     controller: App\Controller\CakeController::create
+
+app_cake_edit:
+    path: /cakes/{cakeId}/edit
+    controller: App\Controller\CakeController::edit
+    requirements:
+        cakeId: '\d+'
